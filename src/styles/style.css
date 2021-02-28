@@ -106,9 +106,12 @@ svg {
 .hero {
   position: relative;
 }
-
+.hero figure {
+  max-width: 100%;
+  height: 450px;
+}
 .hero figure img {
-  width: 100%;
+  width: 100% !important;
   height: 450px;
   object-fit: cover;
 }
@@ -146,8 +149,12 @@ svg {
 }
 
 @media (min-width: 768px) {
-  .hero figure img {
+  .hero figure {
+    max-width: 100%;
     height: 750px;
+  }
+  .hero figure img {
+    height: 750px !important;
   }
   .hero .catch h1 {
     font-size: 40px;
@@ -277,6 +284,10 @@ svg {
 }
 
 /* フォト */
+.photo figure {
+  max-height: 100%;
+  height: 170px;
+}
 .photo img {
   width: 100%;
   height: 170px;
@@ -284,6 +295,10 @@ svg {
 }
 
 @media (min-width: 768px) {
+  .photo figure {
+    max-height: 100%;
+    height: 367px;
+  }
   .photo img {
     height: 367px;
   }
@@ -294,12 +309,23 @@ svg {
   padding-top: 60px;
   padding-bottom: 60px;
   color: #fff;
-  background-image: url(../../static/images/pattern.jpg);
+  background-image: none;
   background-size: cover;
   background-color: #477294;
+  position: relative;
+}
+.footer .back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .footer .container {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
