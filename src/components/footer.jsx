@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 export default () => {
   // 下層ページでgraphqlを使用するときは、useStaticQueryを使用する
@@ -20,7 +21,7 @@ export default () => {
     <footer className="footer">
       <div className="container">
         <div className="site">
-          <a href="base-index.html">
+          <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="225.65"
@@ -34,7 +35,7 @@ export default () => {
               />
             </svg>
             <p>おいしい食材と食事を探求するサイト</p>
-          </a>
+          </Link>
         </div>
         <ul className="sns">
           <li>
