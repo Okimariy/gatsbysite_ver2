@@ -2,10 +2,15 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout.jsx"
+import SEO from "../components/seo.jsx"
 
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO
+        pagetitle="ESSENTIALS について"
+        pagedesc=" 食べ物についての情報を発信しているサイトです。"
+      />
       <div className="eyecatch">
         <figure>
           <Img

@@ -3,10 +3,12 @@ import "../styles/style.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout.jsx"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <SEO />
       <section className="hero">
         <figure>
           <Img
